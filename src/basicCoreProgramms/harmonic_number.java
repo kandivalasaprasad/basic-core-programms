@@ -9,15 +9,12 @@ public class harmonic_number {
 		Scanner s = new Scanner(System.in);
 		
 		System.out.println(" enter the value of N : ");
-		int N = s.nextInt();
-		int sum = 1/1;
-		if(N != 0)
-		{
-			sum = (1/1 + 1/N);
-			sum++;
-			System.out.println(sum);
-
+		int n = s.nextInt();
+		float h = 1;
+		for (int i=2; i<=n;i++) {
+			h= h+1f/i;
 		}
+		System.out.println(h);
 
 	}
 
